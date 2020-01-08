@@ -1,3 +1,5 @@
+import 'isomorphic-fetch';
+
 const defaults = {
   loadPath: '/locales/{{lng}}/{{ns}}.json',
   addPath: '/locales/add/{{lng}}/{{ns}}',
@@ -6,6 +8,7 @@ const defaults = {
   parse: JSON.parse,
   stringify: JSON.stringify,
   requestOptions: {},
+  fetch
 };
 
 const arrify = val => (Array.isArray(val) ? val : [val]);
