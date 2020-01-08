@@ -5,7 +5,6 @@ const defaults = {
   allowMultiLoading: false,
   parse: JSON.parse,
   stringify: JSON.stringify,
-  fetch: typeof fetch === 'function' ? fetch : () => {},
   requestOptions: {},
 };
 
